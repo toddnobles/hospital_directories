@@ -25,6 +25,3 @@ That’s it. Requires only Python 3.9+; no external packages.
 ## Troubleshooting
 - If you see “Markdown file not found”, adjust `MARKDOWN_FILE` in `convert_to_csv.py`.
 - Script is pure stdlib; no pip installs needed.
-
-## License
-Choose your preferred license before publishing. (MIT is a common default.)
