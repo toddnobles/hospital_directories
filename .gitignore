@@ -1,0 +1,16 @@
+# OS / editors
+.DS_Store
+__pycache__/
+.venv/
+
+# Generated CSVs
+output/hospital_table_*.csv
+output/hospital_data_merged.csv
+output/hospital_data.csv
+output/hospital_data_run1.csv
+
+# Run artifacts
+output/results/
+output/done_flags/
+output/worker_locks/
+work_index_list.csv.zstd
