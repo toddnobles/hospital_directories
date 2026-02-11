@@ -1,5 +1,8 @@
 # Hospital Directories OCR → CSV
 
+
+Testing out a fully LLM coded approach. All files written by copilot+codex
+
 ## Quick start
 ```bash
 python3 convert_to_csv.py
