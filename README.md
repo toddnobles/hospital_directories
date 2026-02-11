@@ -1,7 +1,5 @@
 # Hospital Directories OCR → CSV
 
-A tiny, zero-dependency helper to turn the OCR’d Markdown tables from the hospital directory PDFs into usable CSVs.
-
 ## Quick start
 ```bash
 python3 convert_to_csv.py
