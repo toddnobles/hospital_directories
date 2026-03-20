@@ -163,66 +163,54 @@ def drop_empty(table: List[List[str]]) -> List[List[str]]:
 
 def normalize_header(name: str) -> str:
     """Fix common OCR/header issues and align to a consistent schema."""
-    name = name.strip()
-    replacements = {
-        "Classification Codes | Control": "Classification Control",
-        "Classification Codes | Service": "Classification Service",
-        "Classification Codes | Control Service Stay": "Classification Control Service Stay",
-        "Classification Codes | Central Service Stay": "Classification Control Service Stay",
-        "Classification Codes": "Classification Codes",
-        "Inpatient Data | Stay": "Stay",
-        "Inpatient Data | Beds": "Beds",
-        "Inpatient Data | Admissions": "Admissions",
-        "Inpatient Data | Beds Admissions Census": "Beds Admissions Census",
-        "Inpatient Data | Beds Admissions Census Bassinets Births Newborn Census": "Beds Admissions Census Bassinets Births Newborn Census",
-        "Newborn Data | Consus": "Newborn Census",
-        "Newborn Data | Newborn Consus": "Newborn Census",
-        "Newborn Data | Basinats Births Newborn Census": "Bassinets Births Newborn Census",
-        "Newborn Data | Bassins": "Bassinets",
-        "Newborn Data | Admissions": "Newborn Admissions",
-        "Expense (thousands of dollars) | Births": "Expense Births",
-        "Expense (thousands of dollars) | Newborn Consus": "Expense Newborn Census",
-        "Expense (thousands of dollars) | Census": "Expense Census",
-        "Expense (thousands of dollars) | Total Payroll Personnel": "Expense Total Payroll Personnel",
-        "Expense (thousands of dollars)": "Expense",
-        "Hospital, Address, Telephone, Administrator, Approval and Facility Codes": "Hospital Detail",
-        "Total": "Expense Total",
-        "Payroll": "Expense Payroll",
-        "Newborn Data | Total Payroll Personnel": "Newborn Total Payroll Personnel",
-        "col_11": "Misc",
-        "Personnel": "Personnel",
-        "Bassinets": "Bassinets",
-        "Births": "Births",
-        "Newborn Census": "Newborn Census",
+    name = name.strip().lower()
+    
+    # Map common variations to our target headers
+    mapping = {
+        "hospital": "Hospital, Address, Telephone, Administrator, Approval and Facility Codes",
+        "hospital details": "Hospital, Address, Telephone, Administrator, Approval and Facility Codes",
+        "hospital detail": "Hospital, Address, Telephone, Administrator, Approval and Facility Codes",
+        "hospital, address, telephone, administrator, approval and facility codes": "Hospital, Address, Telephone, Administrator, Approval and Facility Codes",
+        "control": "control",
+        "service": "service",
+        "stay": "stay",
+        "beds": "beds",
+        "admissions": "admissions",
+        "census": "census",
+        "bassinets": "bassinets",
+        "births": "births",
+        "newborn census": "newborn census",
+        "total": "total",
+        "payroll": "payroll",
+        "personnel": "personnel",
+        "personel": "personnel",
+        "city": "city",
+        "county": "county"
     }
-    return replacements.get(name, name or "col")
+    
+    # Try to find a match in our mapping
+    for key, target in mapping.items():
+        if key in name:
+            return target
+            
+    return name
 
 
 def build_headers(rows: List[List[str]]) -> Tuple[List[str], List[List[str]]]:
     """
-    Derive a single header row from the first one or two rows, then return (headers, data_rows).
+    Derive a single header row from the first row, then return (headers, data_rows).
+    With Gemini 3, we expect the exact headers in the first row.
     """
     if not rows:
         return [], []
 
-    first = rows[0]
-    second = rows[1] if len(rows) > 1 else []
-
-    headers: List[str] = []
-    max_len = max(len(first), len(second))
-    for i in range(max_len):
-        top = first[i].strip() if i < len(first) else ""
-        bottom = second[i].strip() if i < len(second) else ""
-        if bottom:
-            name = f"{top} | {bottom}" if top else bottom
-        else:
-            name = top
-        name = name or f"col_{i}"
-        headers.append(normalize_header(name))
-
-    # Remove duplicate empty header rows from data
-    data_start = 2 if len(second) else 1
-    data_rows = rows[data_start:]
+    raw_headers = rows[0]
+    headers = [normalize_header(h) for h in raw_headers]
+    
+    # The user asked for a specific set. If the model is missing some but they are in the Rules, 
+    # we'll still keep what we have but we want to be as close to the target as possible.
+    
+    data_rows = rows[1:]
     return headers, data_rows
 
 
@@ -271,16 +259,37 @@ def write_csv(table: List[List[str]], path: Path) -> None:
 
 def main():
     if not MARKDOWN_FILE.exists():
-        raise FileNotFoundError(f"Markdown file not found: {MARKDOWN_FILE}")
+        # Try finding all .md files in output/gemini if the main one doesn't exist
+        gemini_dir = Path("output/gemini")
+        if gemini_dir.exists():
+            md_files = sorted(gemini_dir.glob("*.md"))
+            if md_files:
+                print(f"Processing {len(md_files)} markdown files from {gemini_dir}...")
+                html_text = "\n".join(f.read_text(encoding="utf-8") for f in md_files)
+            else:
+                raise FileNotFoundError(f"Markdown file not found: {MARKDOWN_FILE}")
+        else:
+            raise FileNotFoundError(f"Markdown file not found: {MARKDOWN_FILE}")
+    else:
+        html_text = MARKDOWN_FILE.read_text(encoding="utf-8")
 
-    OUTPUT_DIR.mkdir(exist_ok=True)
-    html_text = MARKDOWN_FILE.read_text(encoding="utf-8")
+    # Clean up markdown code block delimiters if present
+    html_text = re.sub(r"```(?:html|markdown)?", "", html_text)
 
-    parser = TableParser()
-    parser.feed(html_text)
+    # Use regex to find <table>...</table> blocks to be safe
+    table_blocks = re.findall(r"<table.*?>.*?</table>", html_text, re.DOTALL | re.IGNORECASE)
+    
+    if not table_blocks:
+        # Fallback: just feed the whole text and hope for the best
+        parser = TableParser()
+        parser.feed(html_text)
+    else:
+        parser = TableParser()
+        for block in table_blocks:
+            parser.feed(block)
 
     if not parser.tables:
-        raise RuntimeError("No tables found in markdown file.")
+        raise RuntimeError("No tables found in markdown file. Check if the model outputted <table> tags correctly.")
 
     merged_records: List[dict] = []
     merged_headers: List[str] = []

@@ -1,0 +1,33 @@
+"Hospital, Address, Telephone, Administrator, Approval and Facility Codes",control,service,stay,beds,admissions,census,bassinets,births,census_2,total,payroll,personnel,city,county
+"*Thomas Hospital-Morphy Ave-Zip 36532-Tel 928-2375-Claud Clark Jr, Adm A 9 F 2 12 14 15 16 18 22 23 33 34",13,10,S,36,1786,28,12,206,1,353,172,61,FAIRHOPE,BALDWIN COUNTY
+"*Fayette County Hospital-Hwy 43 N-Zip 35555-Tel 932-5966-Robert H Boone, Adm A 1 9 A 19 F 1 2 9 12 14 15 16 18 23",13,10,S,35,1996,30,8,220,2,-,-,72,FAYETTE,FAYETTE COUNTY
+"*Florala Memorial Hospital-E 5th Ave At 5th & 6th Sts Box 206-Zip 36442-Tel 8-3731-J W Bancroft, Adm A 9 F 2 12 14 15 18 22 33",23,10,S,23,819,11,9,86,-,-,-,33,FLORALA,COVINGTON COUNTY
+"*Eliza Coffee Memorial Hospital-600 W Alabama St-Zip 35631-Tel 764-8321-R C Barnes, Gen Mgr A 1 9 F 1 2 3 6 9 12 14 15 16 18 19 21 22 23 24 26 27",15,10,S,239,11662,198,41,1659,21,2564,1123,461,FLORENCE,LAUDERDALE COUNTY
+"*South Baldwin Hospital-1521 N McKenzie St-Zip 35365-Tel 943-8711-George C Schneider, Adm A 9 F 1 2 9 12 14 15 16 18 22 23 29 33",13,10,S,54,2055,27,10,281,2,415,216,73,FOLEY,BALDWIN COUNTY
+"*Noble Army Hospital-Zip 36205-Tel 238-3861-Lt Col Warren S P Henderson MC, CO A 1 F 1 2 3 4 5 6 7 8 9 10 11 12 14 15 16 17 18 20 22 24 25 28 29 33",42,10,S,75,2065,48,14,257,-,-,-,217,FORT MCCLELLAN,CALHOUN COUNTY
+"*De Kalb County General Hospital-1400 Forrest Ave N-Tel 845-3150-Clayton Smith, Adm 1 9 F 1 2 5 9 12 14 15 16 18 23",13,10,S,82,2786,51,13,538,5,649,423,166,FORT PAYNE,DE KALB COUNTY
+"*U S Army Hospital-Zip 36362-Tel 2316-Col Richard B Austin III, MC, CO F 1 2 3 5 6 8 9 11 12 14 15 16 17 18 20 22 23 28 29 33 35",42,10,S,100,3422,49,17,596,-,-,-,310,FORT RUCKER,DALE COUNTY
+*Baptist Memorial Hospital-1007 Goodyear Ave-Zip 35903-Tel 492-1240-J Cecil Hamiter Adm A 1 9 F 1 2 3 5 6 8 9 12 14 15 16 18 19 20 21 23 33,21,10,S,188,6994,127,20,801,12,1923,968,358,GADSDEN,ETOWAH COUNTY
+"*District 4 Tuberculosis Hospital-3001 Scenic Hwy-Zip 35901-Tel 546-9266-Harry E Gauntt, Adm A 1 F 2 5 14 16 18 20 29",16,33,L,153,246,140,-,-,-,366,228,78,GADSDEN,ETOWAH COUNTY
+"*Holy Name Of Jesus Hospital-Moragne Park-Zip 35902-Tel 547-4911-Sister Mary Of The Precious Blood RN, Supt A 1 6 9 F 1 2 3 4 6 8 12 14 15 16 18 20 21 23 27",21,10,S,177,7134,149,20,759,8,-,-,414,GADSDEN,ETOWAH COUNTY
+"*Wiregrass Hospital-1200 W Maple Ave-Zip 36340-Tel 684-2222-W C Kingsbery, Adm A 9 F 2 5 9 12 14 15 18 23 33",13,10,S,50,2134,39,8,199,1,411,201,75,GENEVA,GENEVA COUNTY
+"*Georgiana Hospital-Jones & Miranda St-Tel 376-2205-K L Hollis MD, Adm A 9 F 1 2 6 8 9 10 11 12 14 15 16 18 19 29 33 - Data For 242 Days",14,10,S,17,348,6,4,16,-,117,58,32,GEORGIANA,BUTLER COUNTY
+"*Longview General Hospital-1100 Bankhead Hwy SW-Tel 674-9422-Ann Downey Morgan, Adm A 9 F 1 2 3 6 9 11 12 14 15 16 18 19 24 29 33",33,10,S,28,920,17,5,84,1,-,-,40,GRAYSVILLE,JEFFERSON COUNTY
+"Hale County Hospital-1st & Greene Sts-Zip 36744-Tel 624-2661-Robert H Cochrane Jr MD, Adm A 9 F 2 12 14 15 16 18 23 33",13,10,S,28,741,15,7,98,-,186,92,39,GREENSBORO,HALE COUNTY
+"*L V Stabler Memorial Hospital-424 Oak St-Zip 36037-Tel 382-3119-William B McGehee, Adm A 1 9 F 1 2 9 12 14 15 18 33",23,10,S,75,2510,46,10,211,2,482,246,90,GREENVILLE,BUTLER COUNTY
+"*Grove Hill Municipal Hospital-Hospital St Box 577-Zip 36451-Tel 275-3237-W E Wosnig, Adm A 9 F 2 14 15 18 29",14,10,S,30,1000,17,8,94,-,185,99,34,GROVE HILL,CLARKE COUNTY
+"*Guin Hospital-Zip 35563-Tel 468-3353-G S Davis, Adm A 9 -Non Reporting",13,10,S,-,-,-,-,-,-,-,-,-,GUIN,MARION COUNTY
+"*Guntersville Hospital-2067 Dunlap Ave Box 426-Zip 35976-Tel 582-5671-Jearold P Horton, Adm A 1 9 F 1 2 6 9 10 12 14 15 16 18 23 29 33",13,10,S,60,2670,43,14,381,3,537,272,100,GUNTERSVILLE,MARSHALL COUNTY
+"*Lister Hill Hospital-1315 Military St S-Zip 35570-Tel 921-2125-G S Davis, Adm A 9 F 1 2 9 11 12 14 15 16 18 29 33",13,10,S,37,1260,20,12,66,-,401,221,62,HAMILTON,MARION COUNTY
+"Block Chandler Hospital-Hwy 31 N-Zip 36540-Tel 773-2503-Mary L Gray, RN A 9 F 1 2 3 6 9 11 12 14 15 16 18 29 34",33,10,S,70,2515,45,8,125,1,822,281,106,HARTSELLE,MORGAN COUNTY
+"*Hartselle Hospital-401 N Sparkman St-Zip 35640-Tel 773-2521-Orval P Sparkman, Adm & Owner A 1 9 F 1 2 3 6 8 9 12 14 15 18 29 33",33,10,S,58,3221,50,10,279,2,844,258,102,HARTSELLE,MORGAN COUNTY
+"*Cleburne Hospital-Box 398-Zip 36264-Tel 463-2121-Gilbert H Taylor, Adm A 9 F 1 2 9 12 14 15 16 18 22 23 29",13,10,S,30,973,18,12,55,-,198,98,50,HEFLIN,CLEBURNE COUNTY
+"Crestwood Hospital-4411 Mcallister Dr NSW-Zip 35801-Tel 837-0300-S Millard Johnson, Adm",32,10,S,-,-,-,-,-,-,-,-,-,HUNTSVILLE,MADISON COUNTY
+"*Fifth Avenue General Hospital-107 Governors Dr SW-Zip 35801-Tel 359-2271-Nell Lackey, Adm A 9 F 2 12 14 18 29 33",33,10,S,42,2231,38,-,-,-,512,230,71,HUNTSVILLE,MADISON COUNTY
+"*Huntsville Hospital-101 Sivley Rd-Zip 35801-Tel 539-9411-L C Rigsby, Adm A 1 9 F 1 2 3 5 6 9 10 12 14 15 16 18 19 21 22 23 24 27 34",14,10,S,299,15322,258,54,3604,35,3590,2336,716,HUNTSVILLE,MADISON COUNTY
+U S Army Hospital-See Redstone Arsenal,14,10,S,3,-,-,-,-,-,-,-,-,HUNTSVILLE,MADISON COUNTY
+"*Jackson Hospital-Box 518-Zip 36545-Tel 246-2407-Leo Earl DuBose, Adm A 9 F 1 2 12 14 15 18 33",14,10,S,30,1399,19,10,221,-,279,154,46,JACKSON,CLARKE COUNTY
+"*Jasper Community Hospital-1100 7th Ave-Tel FU 4-6071-Jim R Rutledge, Adm",23,10,S,-,-,-,-,-,-,-,-,-,JASPER,WALKER COUNTY
+"*Peoples Hospital-E 19th St Box 684-Zip 35501-Tel 384-4531-Chester M Black, Adm F 1 2 3 4 8 9 11 12 14 15 16 18 22 23",13,10,S,117,5849,84,20,852,7,784,423,191,JASPER,WALKER COUNTY
+"Batson Memorial Sanatorium-Rte 2-Zip 36862-Tel 864-4161-Mae C Gilliland RN, Supt F 1 4 29 33",12,33,L,75,65,59,-,-,-,147,108,25,LAFAYETTE,CHAMBERS COUNTY
+"Chambers County Hospital-404 9th Ave SW-Zip 36862-Tel 864-2481-Charles Cumbee, Adm A 9 F 2 9 11 12 14 15 16 18 23",13,10,S,35,1344,27,12,146,-,249,143,69,LAFAYETTE,CHAMBERS COUNTY

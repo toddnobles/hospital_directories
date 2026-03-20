@@ -1,0 +1,29 @@
+"Hospital, Address, Telephone, Administrator, Approval and Facility Codes",control,service,stay,beds,admissions,census,bassinets,births,census_2,total,payroll,personnel,city,county
+"Henry County Hospital-Dothan Rd-Zip 36310-Tel 589-2241-William E Riley, Adm A 9 -Newly Registered-",13,10,S,,,,,,,,,,ABBEVILLE,HENRY
+"*Shelby Memorial Hospital-Box 248-Zip 35007-Tel 663-2941-Herman L Herold, Adm A 9 F 2 4 6 9 12 14 15 16 18 23 29 33",13,10,S,55,2855,54,10,407,4,,,178,ALABASTER,SHELBY
+"*Sand Mountain Infirmary-200 S Broad St-Zip 35950-Tel 878-4162-Ralph Hart, Adm A 9 -Non Reporting-",32,10,S,,,,,,,,,,ALBERTVILLE,MARSHALL
+"*Russell Hospital-U S 280 By-Pass-Zip 35010-Tel 234-3412-James W Brown Jr, Adm A 1 9 F 1 2 6 9 12 14 15 16 18 23 33",23,10,S,80,3138,52,15,506,4,579,376,149,ALEXANDER CITY,TALLAPOOSA
+"*Andalusia Hospital-Formerly Covington Memorial Hospital-100 E Watson St-Tel 222-3121-F Donald Davis, Adm -Non Reporting-",33,10,S,,,,,,,,,,ANDALUSIA,COVINGTON
+"*Columbia General Hospital-200 Hillcrest Dr-Zip 36420-Tel 222-4141-Ray Evers MD, Adm A 9 -Non Reporting-",33,10,S,,,,,,,,,,ANDALUSIA,COVINGTON
+"*Anniston Memorial Hospital-400 E 10th St Box 370-Zip 36202-Tel 237-5421-W Boyd Jones, Adm A 1 6 9 F 1 2 3 6 8 9 11 12 14 15 16 18 20 21 22 23 27",14,10,S,220,9517,154,32,1543,15,2256,1274,304,ANNISTON,CALHOUN
+"*Stringfellow Memorial Hospital-324 E 19th St-Zip 36201-Tel 237-7581-Billy N Glass, Adm F 1 2 6 8 14 16 18 22 23 25 33",23,10,S,60,590,31,,,,282,136,59,ANNISTON,CALHOUN
+"*Arab Hospital-200 S Main St-Zip 35016-Tel 586-4181-Jesse G Brown, Adm A 1 9 F 1 2 9 12 14 15 18 22 29 33",13,10,S,36,1778,30,8,295,2,320,171,68,ARAB,MARSHALL
+"*Clay County Hospital-544 E 1st Ave-Zip 36251-Tel 354-2131-Mrs Edris S Speer, Adm A 9 -Non Reporting-",13,10,S,,,,,,,,,,ASHLAND,CLAY
+"*Athens-Limestone Hospital-105 Sanders St Box 351-Zip 35611-Tel 232-4141-Clarence E Warren, Adm A 1 9 F 2 9 12 14 15 16 18 23 29",15,10,S,93,3678,54,18,797,8,543,342,138,ATHENS,LIMESTONE
+"*Greenlawn Hospital-1002 E Church St-Zip 36502-Tel 368-3141 Lavon Henley, Adm A 9 -Non Reporting-",13,10,S,,,,,,,,,,ATMORE,ESCAMBIA
+"John Hodges Drake Infirmary, Auburn University-309 W Magnolia St-Zip 36830-Tel 887-651-Morgan W Brown MD, Student Health Dir A 9 F 2 8 11 12 18 29 32 33",12,11,S,65,1440,10,,,,172,131,31,AUBURN,LEE
+"Bay Minette Clinic-Hospital-301 Hand Ave-Zip 36507-Tel 937-4612-Berta K Johnson RN, Adm A 9 F 2 12 15 18 29 33",31,10,S,21,582,9,7,86,,102,57,22,BAY MINETTE,BALDWIN
+"*Mattie L Rhodes Hospital-301 D'Olive St Box 910-Zip 36507-Tel 937-2321-Paul Schultz, Adm A 9 F 2 11 12 14 15 18 29",32,10,S,27,1197,14,8,141,1,280,111,40,BAY MINETTE,BALDWIN
+"*Bessemer General Hospital-1710 3rd Ave N-Tel 425-1611-W P Smith, Adm A 9 F 1 2 3 4 9 12 14 15 18 33 35",33,10,S,72,2483,44,23,388,4,608,301,93,BESSEMER,JEFFERSON
+"*Memorial Hospital Of Bessemer-U S HWY 11 S-Tel 428-0171--George L Reynolds, Adm -Newly Registered-",14,10,S,,,,,,,,,,BESSEMER,JEFFERSON
+"*Birmingham Baptist Hospitals-Includes Highland Avenue Baptist Hospital-708 Tuscaloosa Ave-Zip 35211-Tel 787-2611-L R Jordan, Exec Dir A 1 3 6 9 F 1 2 3 4 6 8 9 12 14 15 16 18 19 20 21 22 23 27",21,10,S,350,12575,319,34,932,12,4457,2714,846,BIRMINGHAM,JEFFERSON
+"*Carraway Methodist Hospital-1615 N 25th St-Zip 35234-Tel 251-4231-John L Howell, Adm A 1 2 3 4 5 6 9 F 1 2 3 4 5 6 9 10 11 12 14 15 16 18 19 20 21 23 33",21,10,S,309,12002,246,44,1319,18,3941,1995,610,BIRMINGHAM,JEFFERSON
+"*Children's Hospital Of Birmingham-1601 6th Ave S-Zip 35233-Tel 323-8901-William H Adams Jr, Adm A 1 3 5 9 F 1 2 3 4 5 6 9 11 12 14 16 17 18 22 23 29",23,50,S,128,7249,94,,,,1551,877,273,BIRMINGHAM,JEFFERSON
+"*Crippled Children's Clinic And Hospital-Formerly-365-Crippled Childrens Clinic-620 S 19th St-Zip 35233-Tel 323-7281-E E Cavaleri Jr, Adm A 1 4 5 9 F 1 2 4 8 11 14 16 17 18 22 33",23,57,L,100,1329,60,,,,576,328,142,BIRMINGHAM,JEFFERSON
+"*East End Memorial Hospital-7916 2nd Ave S Drawer 4277-Zip 35206-Tel 836-3211-R Floyd Yarbrough, Adm A 1 9 F 1 2 3 6 9 12 14 15 16 18 23 27 33",33,10,S,200,7335,131,25,985,11,1733,785,263,BIRMINGHAM,JEFFERSON
+"*Eye Foundation Hospital-1720 8th Ave S-Tel 251-4191-Millard L Wear, Adm A 1 9 F 2 6 11 12 14 16 18 33",23,45,S,44,1345,26,,,,391,200,61,BIRMINGHAM,JEFFERSON
+"Highland Avenue Baptist Hospital-See Birmingham Baptist Hospitals, Birmingham",,,,,,,,,,,,,BIRMINGHAM,JEFFERSON
+"*Hill Crest Hospital-Formerly Hill Crest Sanitarium-7000 5th Ave S Box 2896 Woodlawn Sta-Zip 35212-Tel 595-1151-Robert V Sanders, Adm F 2 4 6 7 17 18 24 33",32,22,S,59,1055,48,,,,318,166,74,BIRMINGHAM,JEFFERSON
+Hill Crest Sanitarium-See Hill Crest Hospital,,,,,,,,,,,,,BIRMINGHAM,JEFFERSON
+"*Holy Family Hospital-1915 19th St-Zip 35218-Tel 787-4641-Sister Agnes Martha RN, Adm A 1 9 F 1 2 5 6 9 14 15 16 18 20 22 23 29",21,10,S,73,2125,43,20,962,7,506,354,129,BIRMINGHAM,JEFFERSON
+"*Jefferson Tuberculosis Sanatorium-3800 Ridgeway Dr-Zip 35209-Tel 871-7331-Arthur J Viehman MD, Supt & Med Dir A 1 F 2 5 14 17 18 20 29 34",23,33,L,225,410,207,,,,521,241,116,BIRMINGHAM,JEFFERSON
